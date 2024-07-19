@@ -1,4 +1,36 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+header{
+  .logo{
+      width: 80px;
+      margin: 15.726px 0;
+  }
+  .menu{
+    gap: 64px;
+    a:hover{
+      font-weight: bold;
+    }
+  }
+  a{
+    color: $white-color;
+    }
+}
+@include md{
+  header{
+    .header{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .menu{
+      display: none;
+    }
+    .menu-md{
+      display: flex;
+      a{
+        padding: 11.34px 0;
+        &:hover{
+          background: $white-color;
+          color: $primary-color;
+        }
+      }
+    }
+  }
 }

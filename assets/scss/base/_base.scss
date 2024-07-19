@@ -1,0 +1,19 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    padding-top: 80px;  // 因header position:fixed 於上方，因此上方需留白內文才不會被吃掉
+    @include md{
+        padding-top: 176px;
+    }
+}
+a{
+    text-decoration: none;
+    font-style: inherit;
+    display: inline-block;
+}
+img{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}

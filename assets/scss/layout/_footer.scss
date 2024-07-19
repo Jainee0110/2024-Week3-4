@@ -1,4 +1,101 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+footer{
+  a{
+    color: $white-color;
+    &:hover{
+      font-weight: bold;
+    }
+  }
+  img{
+    width: 48px;
+    transition: 0.5s;
+    &:hover{
+      border: 2px solid $white-color;
+      box-shadow: 0px 0px 16px 3px #f55961e5;
+    }
+  }
+  .fb-icon{  
+    &:hover{
+      border-radius: 50%;
+    }  
+  }
+  .icon{
+    &:hover{   
+      border-radius: 10px;
+    }   
+  }
+  .material-symbols-outlined {
+    font-size: 48px;
+  }
+  .mail{
+    margin-bottom: 31.34px;
+  }
+  .social-media-md{
+    display: none;
+  }
+  .copyright{
+    padding: 30.5px 0;
+  }
+}
+@include lg{
+  footer{
+    img{
+      width: 40px;
+    }
+    .menu{
+      padding: 48px 0 24px 0;
+    }
+    .social-media{
+      gap: 16px;
+    }
+    .copyright{
+      padding-bottom: 38.5px;
+    }
+  }
+}
+@include md{
+  footer{
+    img{
+      width: 24px;
+      &:hover{
+        border-width: 1px;
+      }
+    }
+    .menu{
+      display: none;
+    }
+    .social-media-md{
+      display: flex;
+    }
+    .icon{
+      &:hover{   
+        border-radius: 5px;
+      }   
+    }
+    .contact{
+      font-size: 16px;
+      padding-top: 24px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .material-symbols-outlined {
+      font-size: 24px;
+      margin-right: 8px;
+    }
+    .mail{
+      margin-bottom: 23.34px;
+    }
+    .copyright{
+      flex-direction: column; 
+      align-items: flex-start;     
+      gap: 8px;
+      padding: 16px 0 24px 0;
+      a{
+      font-size: 16px;
+      }
+      .terms-of-service{
+        margin-left: 0;
+      }
+    }
+  }
 }
