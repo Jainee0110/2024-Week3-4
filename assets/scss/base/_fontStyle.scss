@@ -34,12 +34,30 @@ body{
 .t-white{
     color: $white-color;
 }
+.t-grey{
+    color: $grey-color;
+}
+.t-dark{
+    color: $dark-color;
+}
 
 //position
 .t-center{
     text-align: center;
 }
 
+
+//line-height
+.lh-base{
+    line-height: 1.5;
+}
+
 .fw-bold{
     font-weight: bold;
+}
+.underline{
+    text-decoration: underline;
+}
+.nowrap{
+    white-space:nowrap;
 }

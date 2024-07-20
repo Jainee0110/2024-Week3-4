@@ -1,0 +1,56 @@
+.store{
+    select{
+        width: 304px;
+        padding: 6.67px 0;  
+        font-size: 18px;
+        font-family: roboto, "Noto Sans TC", sans-serif;
+        @include md{
+            max-width: 276px;
+        }
+    }
+    &-detail{
+        flex-basis: calc(33.3334% - 16px);
+        @include lg{
+            flex-basis: calc(50% - 12px);
+        }
+        @include md{
+            flex-basis: 100%;
+        }
+    }
+    h2{
+        padding-top: 7.335px;
+        padding-bottom: 7.335px;;
+    }
+    img{
+        @include lg{
+            aspect-ratio: 1.5 / 1; 
+            object-fit: cover;
+        }
+        @include md{
+            aspect-ratio: 1.555 / 1; 
+        }
+    }
+    .info{
+        padding-top: 15.335px;
+        padding-bottom: 15.335px;
+    }
+    .tel:hover{
+        font-weight: bold;
+    }
+    .address{
+        width: 86.009%;
+    }
+    .detail{
+        font-size: 19px;
+        padding: 15.25px 0;
+        &:hover{
+            background: $primary-color;
+        }
+    }
+    label{
+        @include md{
+            font-size: 16px;
+            margin-right: 8px;
+        }
+    }
+}
