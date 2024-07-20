@@ -2,6 +2,11 @@
 .d-flex{
     display: flex;
 }
+.d-lg-flex{
+    @include lg{
+        display: flex;
+    }
+}
 .d-block{
     display: block;
 }
@@ -16,6 +21,9 @@
 }
 .align-items-center{
     align-items: center;
+}
+.align-items-start{
+    align-items: flex-start;
 }
 .column{
     flex-direction: column;
@@ -35,6 +43,11 @@
 .g-12{
     gap: 48px;
 }
+@include lg{
+    .col-lg{
+        flex-direction: column !important;
+    } 
+}
 
 //background
 .bg-primary{
@@ -48,11 +61,16 @@
 .w-100{
     width: 100%;
 }
+.w-66{
+    width: 66%;
+}
 .w-50{
     width: 50%;
 }
-.w-66{
-    width: 66%;
+@include lg{
+    .w-lg-50{
+        width: 50%;
+    }
 }
 
 //spacing
