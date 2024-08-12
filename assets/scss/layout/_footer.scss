@@ -26,14 +26,9 @@ footer{
   .material-symbols-outlined {
     font-size: 48px;
   }
-  .mail{
-    margin-bottom: 31.34px;
-  }
-  .social-media-md{
-    display: none;
-  }
   .copyright{
-    padding: 30.5px 0;
+    padding-top: 29px;
+    padding-bottom: 30px;
   }
 }
 @include lg{
@@ -42,13 +37,13 @@ footer{
       width: 40px;
     }
     .menu{
-      padding: 48px 0 24px 0;
+         padding-top: 8px;
     }
     .social-media{
       gap: 16px;
     }
     .copyright{
-      padding-bottom: 38.5px;
+      padding-bottom: 38px;
     }
   }
 }
@@ -60,36 +55,33 @@ footer{
         border-width: 1px;
       }
     }
-    .menu{
-      display: none;
-    }
-    .social-media-md{
-      display: flex;
+    .social-media{
+      gap: 8px;
     }
     .icon{
       &:hover{   
         border-radius: 5px;
       }   
     }
+    .menu{
+      padding-top: 0px;
+      &-list{
+        display: none;
+      }
+    }
     .contact{
       font-size: 16px;
-      padding-top: 24px;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
     }
     .material-symbols-outlined {
       font-size: 24px;
       margin-right: 8px;
     }
-    .mail{
-      margin-bottom: 23.34px;
-    }
+
     .copyright{
       flex-direction: column; 
       align-items: flex-start;     
       gap: 8px;
-      padding: 16px 0 24px 0;
+      padding: 16px 0 23px 0;
       a{
       font-size: 16px;
       }

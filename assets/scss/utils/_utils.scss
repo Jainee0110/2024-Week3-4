@@ -74,7 +74,9 @@
 }
 
 //spacing
-
+.pt-3{
+    padding-top: 12px;
+}
 .pt-12{
     padding-top: 48px;
 }
@@ -83,6 +85,9 @@
 }
 .pb-6{
     padding-bottom: 24px;
+}
+.pb-8{
+    padding-bottom: 32px;
 }
 .pb-20{
     padding-bottom: 80px;
@@ -108,6 +113,12 @@
     }
 }
 @include md{
+    .pt-md-6{
+        padding-top: 24px;
+    }
+    .pb-md-6{
+        padding-bottom: 24px;
+    }
     .pt-md-10{
         padding-top: 40px;
     }
@@ -137,12 +148,18 @@
 .mb-8{
     margin-bottom: 32px;
 }
+.mb-9{
+    margin-bottom: 36px;
+}
 .mb-10{
     margin-bottom: 40px;
 }
 @include lg{
     .mb-lg-0{
         margin-bottom: 0;
+    }
+    .mb-lg-8{
+        margin-bottom: 32px;
     }
 }
 @include md{

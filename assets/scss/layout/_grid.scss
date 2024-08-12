@@ -1,16 +1,14 @@
 .container{
-    max-width: 1296px;
+    max-width: 1320px;
     margin: 0 auto;
-    @media(max-width: 1319px){ //1296px + 24px (1319px以下兩側距離螢幕小於12px故設此段點，讓container兩側永遠都有12px以上的距離)
-        padding-left: 12px;
-        padding-right: 12px;
-    }
+    padding-left: 12px;
+    padding-right: 12px;
     @include lg{
         padding-left: 36px;
         padding-right: 36px;
     }
     @include md{
         padding-left: 13px;
-        padding-right: 14px;
+        padding-right: 13px;
     }
 }

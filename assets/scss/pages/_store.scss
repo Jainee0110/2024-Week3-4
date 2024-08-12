@@ -1,7 +1,7 @@
 .store{
     select{
         width: 304px;
-        padding: 6.67px 0;  
+        padding: 6px 0;  
         font-size: 18px;
         font-family: roboto, "Noto Sans TC", sans-serif;
         @include md{
@@ -18,8 +18,8 @@
         }
     }
     h2{
-        padding-top: 7.335px;
-        padding-bottom: 7.335px;;
+        padding-top: 8px;
+        padding-bottom: 7px;;
     }
     img{
         @include lg{
@@ -52,8 +52,8 @@
         }
     }
     .info{
-        padding-top: 15.335px;
-        padding-bottom: 15.335px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
     .tel:hover{
         font-weight: bold;
@@ -63,7 +63,7 @@
     }
     .detail{
         font-size: 19px;
-        padding: 15.25px 0;
+        padding: 15px 0;
         &:hover{
             background: $primary-color;
         }

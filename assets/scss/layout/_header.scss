@@ -2,7 +2,7 @@ header{
   z-index: 10;
   .logo{
       width: 80px;
-      margin: 15.726px 0;
+      margin: 16px 0;
   }
   .menu{
     gap: 64px;
@@ -26,7 +26,7 @@ header{
     .menu-md{
       display: flex;
       a{
-        padding: 11.34px 0;
+        padding: 11px 0;
         &:hover{
           background: $white-color;
           color: $primary-color;
