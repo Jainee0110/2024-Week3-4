@@ -1,0 +1,88 @@
+.blog{
+    nav{
+        padding: 13px 0 7px 0;
+    }
+    .nav-list{
+        a:hover{
+            font-weight: bold;
+        }
+    }
+    h3:hover{
+        font-weight: bold;
+    }
+    .more:hover{
+        -webkit-box-reflect: below -25px 
+        -webkit-linear-gradient(
+          top,
+          transparent,
+          rgba(255,255,255,.2) 50%,
+          rgba(255,255,255,1)
+        );
+    }
+    .material-symbols-outlined{
+        font-size: 29px;
+    }
+    @include xl{
+        h3{
+            font-size: 24px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .more{
+            font-size: 30px;
+        }
+
+
+    }
+    @media(max-width: 928px){
+        .content{
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            -webkit-mask-image:linear-gradient(to top, black 0%, black 0%), linear-gradient(to left, black 80%, transparent 90%);               
+            -webkit-mask-position: 100% 100%, 100% 100%;
+            -webkit-mask-size: 100% 100%, 98px 24px; /*120px is your padding*/
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-composite: xor;
+            // max-height: 144px;
+            // display: -webkit-box;
+            // -webkit-line-clamp: 6; 
+            // -webkit-box-orient: vertical; 
+            // https://blog.csdn.net/weixin_59245513/article/details/129925233
+            // https://stackoverflow.com/questions/68130648/apply-padding-to-the-truncated-line-of-a-multiline-text
+        }
+        .paragraph{
+            position: relative;
+        }
+        .btn{
+            position: absolute;
+            right: 0;
+            top: calc(100% - 24px);
+            cursor: pointer;
+            display: block;
+            z-index: 3;
+        }
+        .more{
+            display: none;
+        }
+        img{
+            aspect-ratio: 1.615 / 1;;
+        }
+
+    }
+    @include md{
+        img{
+            aspect-ratio: 1.673 / 1;;
+        }
+        .pre, .next{       
+            text-wrap: nowrap;
+        }
+        .page-link{
+            padding: 10px 13px;
+        }
+        
+    }
+}
+

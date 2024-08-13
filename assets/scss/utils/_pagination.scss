@@ -1,0 +1,28 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+.page-item {
+    &:not(:first-child) .page-link{
+        margin-left: -1px;
+    }
+    &.active .page-link {
+        z-index: 3;
+        color: #fff;
+        background-color: $black-color;
+    }
+    &.disabled .page-link {
+        pointer-events: none;
+        background-color: #F2F2F2;
+    }
+}
+.page-link {
+    padding: 12px 16px;
+    position: relative;
+    display: block;
+    color: $light-grey-color;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid $light-grey-color;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}

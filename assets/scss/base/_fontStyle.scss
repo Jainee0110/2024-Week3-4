@@ -23,6 +23,9 @@ body{
         font-size: 1.5rem !important;
     }
 }
+.fs-5{
+    font-size: 2rem;
+}
 .fs-6{
     font-size: 2.25em;
 }
@@ -30,7 +33,10 @@ body{
     font-size: 3rem;
 }
 
-// Color
+// color
+.t-secondary{
+    color: $secondary-color;
+}
 .t-white{
     color: $white-color;
 }
@@ -55,9 +61,19 @@ body{
 .fw-bold{
     font-weight: bold;
 }
+.fw-medium{
+    font-weight: 500;
+}
+.fw-900{
+    font-weight: 900;
+}
 .underline{
     text-decoration: underline;
 }
 .nowrap{
     white-space:nowrap;
+}
+
+.t-justify{
+    text-align: justify;
 }

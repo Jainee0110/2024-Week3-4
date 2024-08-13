@@ -13,8 +13,18 @@
 .d-none{
     display: none;
 }
+.d-md-none{
+    @include md{
+        display: none;
+    }
+}
 .d-inline-block{
     display: inline-block;
+}
+.d-lg-inline{
+    @include lg{
+        display: inline;
+    }
 }
 .justify-content-between{
     justify-content: space-between;
@@ -48,10 +58,21 @@
         flex-direction: column;
     } 
 }
+@include md{
+    .col-md{
+        flex-direction: column;
+    } 
+    .g-md-2{
+        gap: 8px;
+    }
+}
 
 //background
 .bg-primary{
     background: $primary-color;
+}
+.bg-secondary{
+    background: $secondary-color;
 }
 .bg-black{
     background: $black-color;
@@ -70,6 +91,11 @@
 @include lg{
     .w-lg-50{
         width: 50%;
+    }
+}
+@include md{
+    .w-md-100{
+        width: 100%;
     }
 }
 
@@ -127,6 +153,9 @@
     }
 }
 
+.ms-auto{
+    margin-left: auto;
+}
 .me-auto{
     margin-right: auto;
 }
@@ -139,8 +168,20 @@
 .ms-12{
     margin-left: 48px;
 }
+.mt-auto{
+    margin-top: auto;
+}
+.mt-16{
+    margin-top: 64px;
+}
+.mt-24{
+    margin-top: 96px;
+}
 .mb-2{
     margin-bottom: 8px;
+}
+.mb-4{
+    margin-bottom: 16px;
 }
 .mb-6{
     margin-bottom: 24px;
@@ -154,12 +195,36 @@
 .mb-10{
     margin-bottom: 40px;
 }
+.mb-15{
+    margin-bottom: 60px;
+}
+.mb-20{
+    margin-bottom: 80px;
+}
+.mb-31{
+    margin-bottom: 124px;
+}
 @include lg{
     .mb-lg-0{
         margin-bottom: 0;
     }
+    .mb-lg-1{
+        margin-bottom: 4px;
+    }
+    .mb-lg-6{
+        margin-bottom: 24px;
+    }
     .mb-lg-8{
         margin-bottom: 32px;
+    }
+    .mb-lg-10{
+        margin-bottom: 40px;
+    }
+    .mb-lg-20{
+        margin-bottom: 80px;
+    }
+    .mt-lg-20{
+        margin-top: 80px;
     }
 }
 @include md{
@@ -168,6 +233,18 @@
     }
     .me-md-0{
         margin-right: 0;
+    }
+    .mt-md-10{
+        margin-top: 40px;
+    }
+    .mb-md-16{
+        margin-bottom: 64px;
+    }
+    .mt-lg-16{
+        margin-top: 64px;
+    }
+    .mb-md-0{
+        margin-bottom: 0;
     }
 }
 
@@ -206,3 +283,10 @@
     vertical-align: top;
 }
 
+
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
