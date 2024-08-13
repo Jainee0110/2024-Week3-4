@@ -53,6 +53,9 @@
             // https://blog.csdn.net/weixin_59245513/article/details/129925233
             // https://stackoverflow.com/questions/68130648/apply-padding-to-the-truncated-line-of-a-multiline-text
         }
+        .street-interview .content{
+            -webkit-line-clamp: 5;
+        }
         .paragraph{
             position: relative;
         }
