@@ -12,6 +12,7 @@ body{
 .fs-1{
     font-size: 14px;
 }
+
 .fs-2{
     font-size: 1.25rem;
 }
@@ -32,6 +33,11 @@ body{
 .fs-9{
     font-size: 3rem;
 }
+.fs-md-base{
+    @include md{
+        font-size: 1rem;
+    }
+}
 
 // color
 .t-secondary{
@@ -45,6 +51,12 @@ body{
 }
 .t-dark{
     color: $dark-color;
+}
+.t-primary{
+    color: $primary-color;
+}
+.t-black{
+    color: $black-color;
 }
 
 //position

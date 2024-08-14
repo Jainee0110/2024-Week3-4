@@ -88,4 +88,52 @@
         
     }
 }
+.page{
+    a:hover{
+        font-weight: bold;
+    }
+}
+.share:hover{
+    -webkit-box-reflect: below 1px 
+    -webkit-linear-gradient(
+      top,
+      transparent,
+      rgba(255,255,255,.2) 90%,
+      rgba(255,255,255,1)
+    );
+}
+.tag{
+    a:hover{
+        border-bottom: 3px solid $primary-color;
+    }
+    h4{
+        span{
+            font-size: 48px; 
+        }
+    }
+}
+
+@include lg{
+    .blog1-img{
+            aspect-ratio: 1.64/1;
+    }
+    .blog-1{
+        .tag{
+            h4{
+                font-size: 16px;
+                span{
+                    font-size: 24px;
+                }
+            }
+            a{
+                font-size: 16px;
+            }
+        }
+    }
+}
+@include md{
+    .blog1-img{
+            aspect-ratio: 1.68/1;
+    }
+}
 

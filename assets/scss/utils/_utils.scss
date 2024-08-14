@@ -65,6 +65,9 @@
     .g-md-2{
         gap: 8px;
     }
+    .g-md-6{
+        gap: 24px;
+    }
 }
 
 //background
@@ -92,6 +95,9 @@
     .w-lg-50{
         width: 50%;
     }
+    .w-lg-78{
+        width: 78%;
+    }
 }
 @include md{
     .w-md-100{
@@ -102,6 +108,9 @@
 //spacing
 .pt-3{
     padding-top: 12px;
+}
+.pt-6{
+    padding-top: 24px;
 }
 .pt-12{
     padding-top: 48px;
@@ -165,17 +174,35 @@
 .me-4{
     margin-right: 16px;
 }
+.me-6{
+    margin-right: 24px;
+}
+.ms-2{
+    margin-left: 8px;
+}
 .ms-12{
     margin-left: 48px;
 }
 .mt-auto{
     margin-top: auto;
 }
+.mt-2{
+    margin-top: 8px;
+}
+.mt-4{
+    margin-top: 16px;
+}
+.mt-6{
+    margin-top: 24px;
+}
 .mt-16{
     margin-top: 64px;
 }
 .mt-24{
     margin-top: 96px;
+}
+.mb-1{
+    margin-bottom: 4px;
 }
 .mb-2{
     margin-bottom: 8px;
@@ -204,12 +231,21 @@
 .mb-31{
     margin-bottom: 124px;
 }
+.mx-4{
+    margin: 0 16px;
+}
 @include lg{
     .mb-lg-0{
         margin-bottom: 0;
     }
     .mb-lg-1{
         margin-bottom: 4px;
+    }
+    .mb-lg-2{
+        margin-bottom: 8px;
+    }
+    .mb-lg-4{
+        margin-bottom: 16px;
     }
     .mb-lg-6{
         margin-bottom: 24px;
@@ -223,28 +259,43 @@
     .mb-lg-20{
         margin-bottom: 80px;
     }
+    .mt-lg-2{
+        margin-top: 8px;
+    }
     .mt-lg-20{
         margin-top: 80px;
     }
+    .me-lg-4{
+        margin-right: 8px;
+    }
 }
 @include md{
+    .mb-md-0{
+        margin-bottom: 0;
+    }
+    .mb-md-2{
+        margin-bottom: 8px;
+    }
+    .mb-md-4{
+        margin-bottom: 16px;
+    }
     .mb-md-6{
         margin-bottom: 24px;
-    }
-    .me-md-0{
-        margin-right: 0;
-    }
-    .mt-md-10{
-        margin-top: 40px;
     }
     .mb-md-16{
         margin-bottom: 64px;
     }
+    .me-md-0{
+        margin-right: 0;
+    }
+    .mt-md-4{
+        margin-top: 16px;
+    }
+    .mt-md-10{
+        margin-top: 40px;
+    }
     .mt-lg-16{
         margin-top: 64px;
-    }
-    .mb-md-0{
-        margin-bottom: 0;
     }
 }
 
@@ -269,6 +320,9 @@
 }
 .border-grey{
     border-color: $dark-grey-color;
+}
+.border-grey2{
+    border-color: $grey-2-color;
 }
 .border-8{
     border-width: 8px;
