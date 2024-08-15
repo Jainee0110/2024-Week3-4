@@ -1,3 +1,148 @@
-.index-title {
-  font-size: 100px;
+.buy:hover{
+  background-color: $white-color;
+  color: $primary-color;
+  font-weight: bold;
+}
+.index-nav{
+  background-image: url(../assets/images/home-header.png);
+  background-repeat: no-repeat; background-position: center; 
+  background-size: cover; 
+  @include lg{
+    background-image: url(../assets/images/home-header-sm.png);
+  }
+}
+
+.subnav{
+  li{
+    @include lg{
+      width: calc(50% - 12px);
+    }
+    @include sm{
+      width: 100%;
+    }
+  }
+}
+.section1{
+  ul{
+    @include lg{
+      width: 48.276%;
+    }
+    @include md{
+      width: 65%;
+    }
+    @include sm{
+      width: 99.43%;
+    }
+  }
+  a:hover{
+    text-shadow: $grey-color 1px 0 10px;
+  }
+}
+.section2{
+  background-image: url(../assets/images/index-bg.png);
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  a{
+    width: 100%;
+    &:hover{
+      color: $white-color;
+      background: $primary-color;
+    }
+  }
+  @include lg{
+    background-image: url(../assets/images/index-bg-sm.png);
+    img{
+      aspect-ratio: 2.9/1;
+    }
+  }
+  @include sm{
+    background-image: url(../assets/images/index-bg-md.png);
+    img{
+      aspect-ratio: 1.4583/1;
+    }
+    }
+}
+.review{
+  li{
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    @include lg{
+      width: calc(50% - 12px);
+      img{
+        aspect-ratio: 1.1/1;
+      }
+    }
+    @include md{
+      width: 60%;
+      margin: 0 auto;
+    }
+    @include sm{
+      width: 100%;
+      img{
+        aspect-ratio: 1.13723/1;
+      }
+    }
+  }
+}
+input{
+  padding-top: 6px;
+  padding-bottom: 6px;
+  line-height: 1.5;
+  width: 636px;
+  @include lg{
+    width: 576px;
+  }
+  @include md{
+    width: 348px;
+  }
+}
+.contact-inner{
+  width: 636px;
+  @include lg{
+    width: 576px;
+  }
+  @include md{
+    width: 348px;
+  }
+}
+textarea{
+  padding-top: 6px;
+  padding-bottom: 0;
+  padding-left: 12px;
+  width: 636px;
+  @include lg{
+    width: 576px;
+  }
+  @include md{
+    width: 348px;
+  }
+}
+.submit{
+  padding: 16px 176px;
+  background-color: $primary-color;
+  color: $white-color;
+  border: none;
+  margin: 48px 110px 0 110px;
+  &:hover{
+    background-color: $secondary-color;
+  }
+  @include lg{
+    margin: 48px 100px 0 100px;
+    padding: 16px 136px;
+  }
+  @include md{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 16px 147px;
+    margin-top: 24px;
+  }
+}
+@include md{
+  .space{
+    width: 32px;
+    height: 3px;
+    display: inline-block;
+  }
 }

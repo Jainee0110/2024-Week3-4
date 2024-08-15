@@ -19,23 +19,48 @@ body{
 .fs-3{
     font-size: 1.5rem;
 }
-.fs-md-3{
-    @include md{
-        font-size: 1.5rem !important;
-    }
-}
 .fs-5{
     font-size: 2rem;
 }
 .fs-6{
-    font-size: 2.25em;
+    font-size: 2.25rem;
 }
 .fs-9{
     font-size: 3rem;
 }
-.fs-md-base{
-    @include md{
+.fs-10{
+    font-size: 4rem;
+}
+@include lg{
+    .fs-lg-base{
         font-size: 1rem;
+    }  
+}
+
+@include md{
+    .fs-md-base{
+        font-size: 1rem;
+    }
+    .fs-md-3{
+        font-size: 1.5rem;
+    }
+    .fs-md-6{
+        font-size: 2.25rem;
+    }
+    .fs-md-7{
+        font-size: 2.5rem;
+    }
+    .fs-md-8{
+        font-size: 2.75rem;
+    }
+}
+
+@include sm{
+    .fs-sm-base{
+        font-size: 1rem;
+    }
+    .fs-sm-3{
+        font-size: 1.5rem;
     }
 }
 
@@ -48,6 +73,9 @@ body{
 }
 .t-grey{
     color: $grey-color;
+}
+.t-grey2{
+    color: $grey-2-color;
 }
 .t-dark{
     color: $dark-color;
@@ -62,6 +90,12 @@ body{
 //position
 .t-center{
     text-align: center;
+}
+.t-end{
+    text-align: right;
+}
+.t-start{
+    text-align-last: left;
 }
 
 
