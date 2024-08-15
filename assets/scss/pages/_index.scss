@@ -3,13 +3,9 @@
   color: $primary-color;
   font-weight: bold;
 }
-.index-nav{
-  background-image: url(../images/home-header.png);
+.index-nav{ 
   background-repeat: no-repeat; background-position: center; 
   background-size: cover; 
-  @include lg{
-    background-image: url(../images/home-header-sm.png);
-  }
 }
 
 .subnav{
@@ -39,7 +35,6 @@
   }
 }
 .section2{
-  background-image: url(../images/index-bg.png);
   background-repeat: no-repeat; 
   background-position: center; 
   background-size: cover; 
@@ -51,17 +46,15 @@
     }
   }
   @include lg{
-    background-image: url(../images/index-bg-sm.png);
     img{
       aspect-ratio: 2.9/1;
     }
   }
   @include sm{
-    background-image: url(../images/index-bg-md.png);
     img{
       aspect-ratio: 1.4583/1;
     }
-    }
+  }
 }
 .review{
   li{
