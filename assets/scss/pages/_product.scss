@@ -71,3 +71,33 @@
         box-shadow: 2px 5px 5px rgb(154, 152, 152);
     }
 }
+.optical-list{
+    width: calc(25% - 18px);
+    @include xl{
+        width: calc(33% - 16px);
+    }
+    @include lg{
+        width: calc(50% - 12px);
+        padding-bottom: 10px;
+    }
+    @include md{
+        width: 70%;
+        padding-bottom: 0px;
+        margin: 0 auto;
+    }
+    @include sm{
+        width: 100%;
+    }
+    img{
+        height: 168px;
+        @include xl{
+            height: auto;
+        }
+        @include lg{
+            aspect-ratio: 2 / 1;
+        }
+        @include sm{
+            aspect-ratio: 2.0793 / 1;
+        }
+    }
+}
