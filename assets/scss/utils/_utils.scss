@@ -47,11 +47,21 @@
 .justify-content-between{
     justify-content: space-between;
 }
+.justify-content-end{
+    justify-content: flex-end;
+}
+.justify-content-center{
+    justify-content: center;
+}
+
 .align-items-center{
     align-items: center;
 }
 .align-items-start{
     align-items: flex-start;
+}
+.align-items-end{
+    align-items: flex-end;
 }
 .column{
     flex-direction: column;
@@ -120,6 +130,9 @@
 }
 .bg-pink{
     background: $pink-color ;
+}
+.bg-none{
+    background: transparent;
 }
 
 //sizing
@@ -487,6 +500,9 @@
 }
 .border-light{
     border-color: #DCDCDC;
+}
+.border-black{
+    border-color: $black-color;
 }
 .border-8{
     border-width: 8px;

@@ -7,8 +7,15 @@
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
   background-repeat: no-repeat; background-position: center; 
   background-size: cover; 
+  height: calc(100vh - 80px);
+  .container{
+    height: 100%;
+  }
   @include lg{
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true"); 
+  }
+  @include md{
+    height: calc(100vh - 173px);
   }
 }
 
@@ -51,13 +58,13 @@
     }
   }
   @include lg{
-    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true");
     img{
       aspect-ratio: 2.9/1;
     }
   }
   @include sm{
-    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true");
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
     img{
       aspect-ratio: 1.4583/1;
     }

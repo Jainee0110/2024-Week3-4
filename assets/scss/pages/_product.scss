@@ -1,19 +1,20 @@
-.nav{
-    &-container{
-        max-width: 1296px;
-        margin: 0 auto;
-    }
-    &-list{
-        &:hover{
-            padding-bottom: 16px;
-            border-bottom: 8px solid $primary-color;
-            @include lg{
-                padding-bottom: 8px;
+
+.product{
+    .nav{
+        &-container{
+            max-width: 1296px;
+            margin: 0 auto;
+        }
+        &-list{
+            &:hover{
+                padding-bottom: 16px;
+                border-bottom: 8px solid $primary-color;
+                @include lg{
+                    padding-bottom: 8px;
+                }
             }
         }
     }
-}
-.product{
     &-nav{
         width: 33.333%;
     }

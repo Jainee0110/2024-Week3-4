@@ -103,8 +103,11 @@
     );
 }
 .tag{
-    a:hover{
-        border-bottom: 3px solid $primary-color;
+    a{
+        border-bottom: 3px solid transparent;
+        &:hover{
+        border-bottom-color: $primary-color;
+        }
     }
     h4{
         span{
