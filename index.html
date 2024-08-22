@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <script type="module" crossorigin src="/2024-Week3-4/assets/main-c9d8327f.js"></script>
-    <link rel="stylesheet" href="/2024-Week3-4/assets/main-a6ca30d5.css">
+    <script type="module" crossorigin src="/2024-Week3-4/assets/main-5dde6f29.js"></script>
+    <link rel="stylesheet" href="/2024-Week3-4/assets/main-e4f662d0.css">
   </head>
   <body>
     <header class="bg-primary fixed t-0 w-100">
@@ -21,11 +21,14 @@
             <li><a href="qa.html">常見問題</a></li>
         </ul>
     </div>
-</header>    <nav class="py-74 py-sm-36 t-end index-nav">
-      <div class="container">
-        <h2 class="fs-6 fs-md-3 fs-sm-base t-secondary">Promise-Desert 2020 早春系列</h2>
-        <h1 class="fs-10 fs-md-7 fs-sm-3 t-secondary fw-bold mb-1 mb-md-6px">看得清，才能看得遠</h1>
-        <a href="product.html" class="buy fs-2 t-white px-3 py-6px bg-primary">立即購買</a>
+</header>    <!-- 直接設定高度的，不需用 padding 推出來，調整後中間區塊可改用 flex 垂直置中 -->
+    <nav class="t-end index-nav">
+      <div class="container d-flex column align-items-end justify-content-center">
+        <div>
+          <h2 class="fs-6 fs-md-3 fs-sm-base t-secondary">Promise-Desert 2020 早春系列</h2>
+          <h1 class="fs-10 fs-md-7 fs-sm-3 t-secondary fw-bold mb-1 mb-md-6px">看得清，才能看得遠</h1>
+          <a href="product.html" class="buy fs-2 t-white px-3 py-6px bg-primary">立即購買</a>
+       </div>
       </div>
     </nav>
     <div class="subnav bg-pink py-20 py-sm-10">
@@ -98,7 +101,8 @@
             <div class="py-4 px-4">
               <p class="fw-medium mb-7px">Jessy</p>
               <p>眼鏡品質優良，下次還會想來這邊購買！</p>
-              <p class="fs-1 t-grey2 mt-18 mt-md-24">2021/06/20</p>
+              <!-- 日期可使用 time 標籤設計 -->
+              <time class="d-block fs-1 t-grey2 mt-18 mt-md-24">2021/06/20</time>
             </div>
           </li>
           <li class="w-25">
@@ -106,7 +110,7 @@
             <div class="py-4 px-4">
               <p class="fw-medium mb-7px">凱倫</p>
               <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
-              <p class="fs-1 t-grey2 mt-18">2021/04/18</p>
+              <time class="d-block fs-1 t-grey2 mt-18">2021/04/18</time>
             </div>
           </li>
           <li class="w-25">
@@ -114,7 +118,7 @@
             <div class="py-4 px-4">
               <p class="fw-medium mb-7px">悠悠</p>
               <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
-              <p class="fs-1 t-grey2 mt-18">2020/12/25</p>
+              <time class="d-block fs-1 t-grey2 mt-18">2020/12/25</time>
             </div>
           </li>
           <li class="w-25">
@@ -122,7 +126,7 @@
             <div class="py-4 px-4">
               <p class="fw-medium mb-7px">Kyuan</p>
               <p>服務很好，品質沒有任何問題，非常喜歡。</p>
-              <p class="fs-1 t-grey2 mt-18 mt-md-24">2020/10/31</p>
+              <time class="d-block fs-1 t-grey2 mt-18 mt-md-24">2020/10/31</time>
             </div>
           </li>
         </ul>
@@ -136,19 +140,19 @@
           <form action="">
             <label for="name">姓名</label>
             <br>
-            <input type="text" id="neme" placeholder="陳小明" class="mb-4 mt-2 ps-3">
+            <input type="text" id="neme" placeholder="陳小明" class="mb-4 mt-2 ps-3 bg-none border border-black">
             <br>
             <label for="tel">聯絡電話</label>
             <br>
-            <input type="tel" id="tel" placeholder="0912-345-678" class="mb-4 mt-2 ps-3">
+            <input type="tel" id="tel" placeholder="0912-345-678" class="mb-4 mt-2 ps-3 bg-none border border-black">
             <br>
             <label for="email">電子郵件</label>
             <br>
-            <input type="email" id="email" placeholder="example@email.com" class="mb-4 mt-2 ps-3">
+            <input type="email" id="email" placeholder="example@email.com" class="mb-4 mt-2 ps-3 bg-none border border-black">
             <br>
             <label for="comment">意見反應</label>
             <br>
-            <textarea name="意見反應" id="commeny" class="mb-4 mt-2 ps-3" placeholder="請輸入您的意見" rows="8" cols="40"></textarea>
+            <textarea name="意見反應" id="commeny" class="mb-4 mt-2 ps-3 bg-none border border-black" placeholder="請輸入您的意見" rows="8" cols="40"></textarea>
             <input type="checkbox" name="privacy" id="agree" class="checkbox" style="width: 20px; height: 20px; vertical-align: top;">
             <label for="agree"></label>我同意隱私權政策，並同意依隱私權政策中<spna class="space d-none"></spna>所述的方式處理自己的資料。</label>
             <br>
